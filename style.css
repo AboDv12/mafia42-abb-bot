@@ -1,0 +1,74 @@
+body {
+    font-size: 15pt;
+    font-family: Arial;
+    margin:0px;
+
+}
+#page{
+  display: grid;
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 200px;
+}
+
+#headder{
+  display: grid;
+  justify-content: center;
+  font-size:90%;
+  font-weight:bold;
+  background:rgb(160,38,300);
+  color:white;
+  position : absolute;
+  bottom:40%;
+  top:0;
+  left:0;
+  right:0;
+  border-bottom-right-radius: 80%;
+  z-index: -1;
+}
+#m42Img{
+  width: 50%;
+  z-index:100;
+  margin-top:80px;
+}
+h1{
+  animation-name:txt;
+  animation-duration:4s;
+  position : absolute ;
+  left:30%;
+}
+
+#add{
+  position : absolute ;
+  top:50%;
+  bottom:50%;
+  right:62%;
+  left:36%;
+width: 30%;
+height:5%;
+font-weight: bold;
+color:white;
+background:black;
+border:none;
+border-radius:10%;
+cursor:pointer;
+transition: 1s;
+}
+@keyframes txt {
+  0%{
+    left:-100px;
+  }
+  100%{
+    left:30%;
+  }
+  
+}
+#add:hover{
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius: 0;
+}
